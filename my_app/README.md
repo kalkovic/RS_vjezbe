@@ -12,22 +12,19 @@ Projekt je razvijen tako da bude jednostavan, monolitan i prikladan za Checkpoin
 - **Tkinter** (ugrađen u Python)
 - **JSON za spremanje vijesti**
 - **Conda virtualno okruženje**
-- (Opcionalno kasnije: FastAPI, Docker, DynamoDB, blockchain modul)
-
 ---
 
 ## Struktura projekta
 my_app/
-    newsapp/
-        core/
-            domain.py
-            services.py
-        ui/
-            gui.py
+newsapp/
+core/
+domain.py
+services.py
+ui/
+gui.py
 main.py
 README.md
 requirements.txt
-
 
 ### 1. Kreiranje conda okruženja
 
