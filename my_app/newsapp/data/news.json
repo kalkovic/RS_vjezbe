@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Pad CloudFlarea uzrokovao prekide diljem interneta",
+    "content": "Veliki pad CloudFlarea uzrokovao je poteškoće u pristupu brojnim web stranicama diljem svijeta. Korisnici su prijavljivali nemogućnost pristupa servisima, uključujući brojne aplikacije, medijske portale i online trgovine. Prekid je trajao oko 45 minuta prije nego je usluga postupno vraćena.",
+    "category": "technology"
+  },
+  {
+    "title": "Rijeka pod vodom: stanovnici plivali ulicama nakon obilne kiše",
+    "content": "Obilne oborine pogodile su Rijeku te izazvale naglo podizanje razine vode. Nekoliko prometnica bilo je potpuno potopljeno, a stanari nižih katova prijavili su ulazak vode u stanove. Građani su na društvenim mrežama dijelili snimke u kojima su doslovno plivali ulicama.",
+    "category": "local"
+  },
+  {
+    "title": "Središnji prijavni ured pod opterećenjem: problemi s upisima na diplomske",
+    "content": "Sustav Središnjeg prijavnog ureda imao je poteškoće tijekom upisa na diplomske studije. Studenti su prijavljivali spor rad sustava, zamrzavanja i pogreške prilikom predaje prijava. Iz ureda su poručili da je problem bio u povećanom broju istovremenih korisnika.",
+    "category": "education"
+  },
+  {
+    "title": "Jesenski rok: studenti čekali X-ice kao da prolaze novu maturu",
+    "content": "Studenti koji su upisali diplomski studij tijekom jesenskog roka morali su gotovo mjesec dana čekati izdavanje svojih X-ica. Mnogi su na društvenim mrežama pisali kako im se činilo da čekaju 'godinama', iako je stvarno kašnjenje bilo nešto više od četiri tjedna. Kažu da im je najviše nedostajala mogućnost normalnog korištenja menze i popusta.",
+    "category": "students"
+  },
+  {
+    "title": "Prometne gužve u Zagrebu nakon kvara semafora",
+    "content": "Kvar na nekoliko ključnih semafora u Zagrebu izazvao je velike zastoje u jutarnjem prometu. Vozači su javljali gužve na Savskoj, Vukovarskoj i Slavonskoj aveniji. Policija je privremeno regulirala promet ručno dok se kvar nije otklonio.",
+    "category": "local"
+  },
+  {
+    "title": "Cijene hrane ponovno rastu: trgovci najavili poskupljenja",
+    "content": "Prema najavama većih trgovačkih lanaca, cijene određenih prehrambenih proizvoda mogle bi porasti do 10% zbog porasta nabavnih troškova. Udruge potrošača upozoravaju da će to najviše pogoditi kućanstva s nižim primanjima.",
+    "category": "economy"
+  },
+  {
+    "title": "Hrvatska reprezentacija započela pripreme za kvalifikacije",
+    "content": "Nogometna reprezentacija Hrvatske započela je pripreme za nadolazeće kvalifikacije. Izbornik je izjavio kako je momčad spremna i motivirana te da očekuju dobre rezultate u sljedećim utakmicama.",
+    "category": "sport"
+  }
+]

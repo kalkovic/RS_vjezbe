@@ -1,5 +1,6 @@
 import tkinter as tk
 import json
+from newsapp.config import NEWS_FILE
 
 class NewsApp:
     def __init__(self, master):
@@ -16,17 +17,22 @@ class NewsApp:
         self.load_news()
 
     def load_news(self):
-        with open("newsapp/data/news.json", "r", encoding="utf-8") as f:
+        with open(NEWS_FILE, "r", encoding="utf-8") as f:
             self.news = json.load(f)
 
         for article in self.news:
             self.listbox.insert(tk.END, article["title"])
 
     def show_article(self, event):
-        index = self.listbox.curselection()[0]
+        selection = self.listbox.curselection()
+        if not selection:
+            return
+        index = selection[0]
+
         self.text.delete("1.0", tk.END)
         self.text.insert(tk.END, self.news[index]["content"])
 
-root = tk.Tk()
-app = NewsApp(root)
-root.mainloop()
+def run_app():
+    root = tk.Tk()
+    app = NewsApp(root)
+    root.mainloop()
