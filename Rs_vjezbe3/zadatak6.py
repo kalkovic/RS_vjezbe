@@ -22,3 +22,12 @@ end = time.perf_counter()
 
 print("Rezultat maina:", rezultat)
 print("Vrijeme:", round(end - start, 2), "s")
+
+"""
+Evo jednostavnije i više “studentski” napisano
+Event loop će normalno pokrenuti fetch_data(2) iako je ne čekamo u main funkciji, 
+jer se task ubacuje u raspored čim pozovemo asyncio.create_task. Kad je task jednom kreiran, 
+event loop ga sam izvršava u pozadini, bez obzira čeka li ga main ili ne.
+Zato se ispis “Dovršio sam s 2.” svejedno pojavi. main čeka samo task1, 
+ali event loop paralelno gura naprijed i task2, pa on završi i ispiše svoje poruke iako ga nismo eksplicitno awaitali. 
+"""
