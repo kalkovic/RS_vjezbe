@@ -1,5 +1,1 @@
-import os
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(BASE_DIR, "data")
-NEWS_FILE = os.path.join(DATA_DIR, "news.json")
+NEWS_FILE = "newsapp/data/news.json"
