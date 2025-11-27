@@ -7,6 +7,9 @@ from newsapp.core.domain import NewsItem
 
 WINDOW_TITLE = "News Aggregator - Checkpoint 1"
 
+def truncate(text: str, length: int = 38) -> str:
+    return text if len(text) <= length else text[:length].rstrip() + "..."
+
 class NewsApp:
     def __init__(self, master):
         self.master = master
@@ -41,7 +44,7 @@ class NewsApp:
         container = ttk.Frame(parent, padding=10)
         container.pack(fill=tk.BOTH, expand=True)
 
-        left = ttk.Frame(container, width=280)
+        left = ttk.Frame(container, width=1080)
         left.pack(side=tk.LEFT, fill=tk.Y, padx=(0,10))
 
         right = ttk.Frame(container)
@@ -97,7 +100,8 @@ class NewsApp:
     def _populate_listbox(self):
         self.news_listbox.delete(0, tk.END)
         for n in self.news_items:
-            self.news_listbox.insert(tk.END, f"{n.title}  [{n.category}]")
+            short = truncate(n.title, 38)
+            self.news_listbox.insert(tk.END, f"{short}  [{n.category}]")
 
     def _load_categories(self):
         cats = services.get_categories()
