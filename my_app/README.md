@@ -16,13 +16,28 @@ Projekt je razvijen tako da bude jednostavan, monolitan i prikladan za Checkpoin
 
 ## Struktura projekta
 my_app/
+build/
+...
+dist/
+main.exe
 newsapp/
 core/
+__init__.py
 domain.py
 services.py
+data/
+__init__.py
+news.json
+storage.py
 ui/
+__init__.py
 gui.py
+utils/
+helpers.py
+__init__.py
 main.py
+config.py
+main.spec
 README.md
 requirements.txt
 
@@ -34,3 +49,9 @@ conda activate newsapp
 
 pip install -r requirements.txt
 python main.py
+
+### 1. Kreiranje jedinstveni paket aplikacije pomoću alata PyInstaller-a
+
+pip install pyinstaller
+
+pyinstaller --noconsole --onefile main.py
