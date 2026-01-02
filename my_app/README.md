@@ -6,6 +6,19 @@ Aplikacija koristi Tkinter za GUI i čita vijesti iz lokalnog JSON-a (`newsapp/d
 Projekt je razvijen tako da bude jednostavan, monolitan i prikladan za Checkpoint 1.  
 ---
 
+# News Aggregator (Checkpoint 2)
+
+Aplikacija je podijeljena na više neovisnih mikroservisa koji međusobno
+komuniciraju putem REST API-ja.
+
+Service-to-service komunikacija
+
+Komunikacija se ostvaruje sinkrono putem REST API-ja (HTTP).
+analytics-service šalje HTTP GET zahtjeve prema ostalim servisima.
+Odabrana je REST komunikacija jer je jednostavna, čitljiva i dovoljna
+za lokalnu razvojnu razinu aplikacije.
+---
+
 ## Tehnologije
 
 - **Python 3.10+**
@@ -55,3 +68,12 @@ python main.py
 pip install pyinstaller
 
 pyinstaller --noconsole --onefile main.py
+
+### 2. API dokumentacija
+Svaki mikroservis koristi FastAPI te automatski generira Swagger dokumentaciju:
+
+News Service: http://localhost:8001/docs
+
+Category Service: http://localhost:8002/docs
+
+Analytics Service: http://localhost:8003/docs
