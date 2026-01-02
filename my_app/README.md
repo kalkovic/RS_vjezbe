@@ -27,6 +27,21 @@ za lokalnu razvojnu razinu aplikacije.
 - **Conda virtualno okruženje**
 ---
 
+### 1. Kreiranje jedinstveni paket aplikacije pomoću alata PyInstaller-a
+
+pip install pyinstaller
+
+pyinstaller --noconsole --onefile main.py
+
+### 2. API dokumentacija
+Svaki mikroservis koristi FastAPI te automatski generira Swagger dokumentaciju:
+
+News Service: http://localhost:8001/docs
+
+Category Service: http://localhost:8002/docs
+
+Analytics Service: http://localhost:8003/docs
+
 ## Struktura projekta
 ```my_app/
 │
@@ -98,18 +113,3 @@ conda activate newsapp
 
 pip install -r requirements.txt
 python main.py
-
-### 1. Kreiranje jedinstveni paket aplikacije pomoću alata PyInstaller-a
-
-pip install pyinstaller
-
-pyinstaller --noconsole --onefile main.py
-
-### 2. API dokumentacija
-Svaki mikroservis koristi FastAPI te automatski generira Swagger dokumentaciju:
-
-News Service: http://localhost:8001/docs
-
-Category Service: http://localhost:8002/docs
-
-Analytics Service: http://localhost:8003/docs
