@@ -30,66 +30,65 @@ za lokalnu razvojnu razinu aplikacije.
 ## Struktura projekta
 ```my_app/
 │
-├─ checkpoint-1/                      ← PRVI CHECKPOINT (monolit + GUI)
+├─ checkpoint-1/                      
 │  │
-│  ├─ build/                          ← PyInstaller artefakti
+│  ├─ build/                          
 │  ├─ dist/
-│  │  └─ main.exe                     ← standalone aplikacija (opcionalno)
+│  │  └─ main.exe                    
 │  │
 │  ├─ newsapp/
-│  │  ├─ core/
-│  │  │  ├─ __init__.py
-│  │  │  ├─ domain.py                 ← NewsItem model
-│  │  │  └─ services.py               ← poslovna logika
-│  │  │
-│  │  ├─ data/
-│  │  │  ├─ __init__.py
-│  │  │  ├─ news.json                 ← lokalni podaci
-│  │  │  └─ storage.py                ← čitanje JSON-a
-│  │  │
-│  │  ├─ ui/
-│  │  │  ├─ __init__.py
-│  │  │  └─ gui.py                    ← Tkinter GUI
-│  │  │
-│  │  ├─ utils/
-│  │  │  ├─ __init__.py
-│  │  │  └─ helpers.py                ← pomoćne funkcije
-│  │  │
-│  │  └─ config.py                    ← putanje / konfiguracija
-│  │
-│  ├─ main.py                         ← ulazna točka aplikacije
-│  ├─ main.spec                       ← PyInstaller konfiguracija
-│  ├─ requirements.txt
-│  └─ README.md
+│    ├─ core/
+│    │  ├─ __init__.py
+│    │  ├─ domain.py                 
+│    │  └─ services.py               
+│    │
+│    ├─ data/
+│    │  ├─ __init__.py
+│    │  ├─ news.json                
+│    │  └─ storage.py                
+│    │
+│    ├─ ui/
+│    │  ├─ __init__.py
+│    │  └─ gui.py                   
+│    │
+│    ├─ utils/
+│    │  ├─ __init__.py
+│    │  └─ helpers.py                
+│    │
+│    └─ config.py                    
+│  
+│  
 │
-├─ checkpoint-2/                      ← DRUGI CHECKPOINT (mikroservisi)
+├─ checkpoint-2/                      
 │  │
 │  ├─ news-service/
-│  │  ├─ app.py                       ← FastAPI servis za vijesti
-│  │  ├─ db.py                        ← SQLite inicijalizacija
-│  │  ├─ models.py                    ← modeli podataka
+│  │  ├─ app.py                       
+│  │  ├─ db.py                        
+│  │  ├─ models.py                   
 │  │  ├─ requirements.txt
 │  │  ├─ .env.example
 │  │  └─ README.md
 │  │
 │  ├─ category-service/
-│  │  ├─ app.py                       ← servis za kategorije
+│  │  ├─ app.py                       
 │  │  ├─ db.py
 │  │  ├─ models.py
 │  │  ├─ requirements.txt
 │  │  ├─ .env.example
 │  │  └─ README.md
 │  │
-│  ├─ analytics-service/              ← (kod tebe: analytics-service)
-│  │  ├─ app.py                       ← agregacija podataka
-│  │  ├─ services.py                  ← pozivi prema drugim servisima
-│  │  ├─ requirements.txt
-│  │  ├─ .env.example
-│  │  └─ README.md
-│  │
-│  └─ README.md                       ← glavni README za CP2
-│
-└─ README.md                          ← (opcionalno) opis cijelog projekta
+│  ├─ analytics-service/              
+│     ├─ app.py                       
+│     ├─ services.py                  
+│     ├─ requirements.txt
+│     ├─ .env.example
+│     └─ README.md
+│  
+├─ main.py
+├─ main.spec
+├─ requirements.txt
+└─ README.md
+                        
 
 ### 1. Kreiranje conda okruženja
 
