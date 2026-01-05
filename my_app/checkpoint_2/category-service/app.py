@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from db import CATEGORIES_DB
-from models import Category
+from .db import CATEGORIES_DB
+from .models import Category
 
 app = FastAPI(title="Category Service")
 

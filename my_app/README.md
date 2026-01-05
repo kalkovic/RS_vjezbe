@@ -33,6 +33,17 @@ pip install pyinstaller
 
 pyinstaller --noconsole --onefile main.py
 
+
+### 1. Kreiranje conda okruženja
+
+```bash
+conda create -n newsapp python=3.10
+conda activate newsapp
+
+pip install -r requirements.txt
+python main.py
+```
+
 ### 2. API dokumentacija
 Svaki mikroservis koristi FastAPI te automatski generira Swagger dokumentaciju:
 
@@ -103,13 +114,4 @@ Analytics Service: http://localhost:8003/docs
 ├─ main.spec
 ├─ requirements.txt
 └─ README.md
-                        
-
-### 1. Kreiranje conda okruženja
-
-```bash
-conda create -n newsapp python=3.10
-conda activate newsapp
-
-pip install -r requirements.txt
-python main.py
+```                 

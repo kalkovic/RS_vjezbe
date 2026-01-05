@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from .db import NEWS_DB
+from .models import News
 
 app = FastAPI(title="News Service")
 

@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from services import fetch_news, fetch_categories
+from .services import fetch_news, fetch_categories
 
 app = FastAPI(title="Analytics Service")
 
