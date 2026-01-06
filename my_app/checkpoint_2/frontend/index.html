@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-    <meta charset="UTF-8">
-    <title>News Aggregator</title>
+  <meta charset="UTF-8">
+  <title>News Aggregator – Checkpoint 2</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    button { margin: 5px; }
+    pre { background: #f4f4f4; padding: 10px; }
+  </style>
 </head>
 <body>
-    <h1>Vijesti</h1>
-    <ul id="news-list"></ul>
 
-    <script src="app.js"></script>
+<h1>News Aggregator</h1>
+
+<button onclick="loadNews()">Učitaj vijesti</button>
+<button onclick="loadCategories()">Učitaj kategorije</button>
+<button onclick="loadAnalytics()">Analytics</button>
+
+<h2>Rezultat:</h2>
+<pre id="output"></pre>
+
+<script>
+const output = document.getElementById("output");
+
+function loadNews() {
+  fetch("http://127.0.0.1:8001/news")
+    .then(res => res.json())
+    .then(data => output.textContent = JSON.stringify(data, null, 2))
+    .catch(err => output.textContent = err);
+}
+
+function loadCategories() {
+  fetch("http://localhost:8002/categories")
+    .then(res => res.json())
+    .then(data => output.textContent = JSON.stringify(data, null, 2))
+    .catch(err => output.textContent = err);
+}
+
+function loadAnalytics() {
+  fetch("http://localhost:8003/stats")
+    .then(res => res.json())
+    .then(data => output.textContent = JSON.stringify(data, null, 2))
+    .catch(err => output.textContent = err);
+}
+</script>
+
 </body>
 </html>
