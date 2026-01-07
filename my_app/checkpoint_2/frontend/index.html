@@ -38,7 +38,7 @@ function loadCategories() {
 }
 
 function loadAnalytics() {
-  fetch("http://localhost:8003/stats")
+  fetch("http://localhost:8003/overview")
     .then(res => res.json())
     .then(data => output.textContent = JSON.stringify(data, null, 2))
     .catch(err => output.textContent = err);

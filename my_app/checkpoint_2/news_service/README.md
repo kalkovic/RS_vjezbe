@@ -6,7 +6,7 @@ Izlaže REST API koji koriste frontend i ostali servisi.
 ## Pokretanje servisa
 
 ```bash
-cd cd my_app/checkpoint_2/news-service
+cd my_app/checkpoint_2/news_service
 pip install -r requirements.txt
-uvicorn news-service.app:app --reload --port 8001
+uvicorn news_service.app:app --reload --port 8001
 ```
