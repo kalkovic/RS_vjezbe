@@ -6,7 +6,7 @@ Izlaže REST API koji koriste news-service i frontend aplikacija.
 ## Pokretanje servisa
 
 ```bash
-cd category-service
+cd my_app/checkpoint_2/category-service
 pip install -r requirements.txt
-uvicorn app:app --reload --port 8002
+uvicorn category-service.app:app --reload --port 8002
 ```
