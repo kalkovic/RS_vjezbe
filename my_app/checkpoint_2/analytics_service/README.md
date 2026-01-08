@@ -6,7 +6,7 @@ Analytics Service je mikroservis zadužen za analizu i statistiku vijesti
 ## Pokretanje servisa
 
 ```bash
-cd my_app/checkpoint_2/analytics_service
+cd my_app/checkpoint_2
 pip install -r requirements.txt
 uvicorn analytics_service.app:app --reload --port 8003
 ```
