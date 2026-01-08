@@ -1,0 +1,69 @@
+[
+  {
+    "imdbID": "1",
+    "Title": "The Shawshank Redemption",
+    "Year": 1994,
+    "Rated": "R",
+    "Runtime": 142,
+    "Genre": "Drama",
+    "Language": "English",
+    "Country": "USA",
+    "Actors": [
+      { "name": "Tim", "surname": "Robbins" },
+      { "name": "Morgan", "surname": "Freeman" }
+    ],
+    "Writer": [
+      { "name": "Stephen", "surname": "King" },
+      { "name": "Frank", "surname": "Darabont" }
+    ],
+    "Plot": "Two imprisoned men bond over a number of years, finding redemption.",
+    "type": "movie",
+    "Images": [],
+    "imdbRating": 9.3,
+    "imdbVotes": 2500000
+  },
+  {
+    "imdbID": "2",
+    "Title": "Inception",
+    "Year": 2010,
+    "Rated": "PG-13",
+    "Runtime": 148,
+    "Genre": "Sci-Fi",
+    "Language": "English",
+    "Country": "USA",
+    "Actors": [
+      { "name": "Leonardo", "surname": "DiCaprio" },
+      { "name": "Joseph", "surname": "Gordon-Levitt" }
+    ],
+    "Writer": [
+      { "name": "Christopher", "surname": "Nolan" }
+    ],
+    "Plot": "A thief steals information by infiltrating dreams.",
+    "type": "movie",
+    "Images": [],
+    "imdbRating": 8.8,
+    "imdbVotes": 2200000
+  },
+  {
+    "imdbID": "3",
+    "Title": "Breaking Bad",
+    "Year": 2008,
+    "Rated": "TV-MA",
+    "Runtime": 49,
+    "Genre": "Crime",
+    "Language": "English",
+    "Country": "USA",
+    "Actors": [
+      { "name": "Bryan", "surname": "Cranston" },
+      { "name": "Aaron", "surname": "Paul" }
+    ],
+    "Writer": [
+      { "name": "Vince", "surname": "Gilligan" }
+    ],
+    "Plot": "A chemistry teacher turns to crime after a cancer diagnosis.",
+    "type": "series",
+    "Images": [],
+    "imdbRating": 9.5,
+    "imdbVotes": 1900000
+  }
+]
