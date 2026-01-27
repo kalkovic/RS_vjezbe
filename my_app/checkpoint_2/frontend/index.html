@@ -4,46 +4,46 @@
   <meta charset="UTF-8">
   <title>News Aggregator – Checkpoint 2</title>
   <style>
-    body { font-family: Arial; margin: 20px; }
-    button { margin: 5px; }
-    pre { background: #f4f4f4; padding: 10px; }
+    body {
+      font-family: Arial;
+      margin: 20px;
+    }
+    button {
+      margin: 5px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    input {
+      margin: 5px;
+    }
   </style>
 </head>
 <body>
 
 <h1>News Aggregator</h1>
 
+<h2>Login</h2>
+<input id="username" placeholder="username">
+<input id="password" placeholder="password" type="password">
+<button onclick="login()">Login</button>
+
+<hr>
+
 <button onclick="loadNews()">Učitaj vijesti</button>
-<button onclick="loadCategories()">Učitaj kategorije</button>
 <button onclick="loadAnalytics()">Analytics</button>
 
 <h2>Rezultat:</h2>
 <pre id="output"></pre>
 
-<script>
-const output = document.getElementById("output");
+<h2>Lista vijesti:</h2>
+<ul id="news-list"></ul>
 
-function loadNews() {
-  fetch("http://127.0.0.1:8001/news")
-    .then(res => res.json())
-    .then(data => output.textContent = JSON.stringify(data, null, 2))
-    .catch(err => output.textContent = err);
-}
-
-function loadCategories() {
-  fetch("http://localhost:8002/categories")
-    .then(res => res.json())
-    .then(data => output.textContent = JSON.stringify(data, null, 2))
-    .catch(err => output.textContent = err);
-}
-
-function loadAnalytics() {
-  fetch("http://localhost:8003/overview")
-    .then(res => res.json())
-    .then(data => output.textContent = JSON.stringify(data, null, 2))
-    .catch(err => output.textContent = err);
-}
-</script>
-
+<script src="app.js"></script>
 </body>
 </html>
