@@ -16,6 +16,11 @@ app.add_middleware(
 def get_all_news():
     return NEWS_DB
 
+@app.get("/categories")
+def get_categories():
+    categories = set(n["category"] for n in news)
+    return list(categories)
+
 @app.get("/news/{news_id}")
 def get_news(news_id: int):
     for n in NEWS_DB:
