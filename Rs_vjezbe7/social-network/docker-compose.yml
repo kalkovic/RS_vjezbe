@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  authapi:
+    build: ./authAPI
+    container_name: authapi
+    ports:
+      - "9000:9000"
+
+  socialapi:
+    build: ./socialAPI
+    container_name: socialapi
+    ports:
+      - "9001:9000"
+    depends_on:
+      - authapi
