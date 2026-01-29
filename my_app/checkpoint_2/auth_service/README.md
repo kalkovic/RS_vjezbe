@@ -7,5 +7,5 @@ autentifikaciju korisnika u sustavu agregatora vijesti.
 ```bash
 cd my_app/checkpoint_2
 pip install -r requirements.txt
-uvicorn auth_service.app:app --reload --port 8000
+uvicorn auth_service.app:app --reload --port 8002
 ```

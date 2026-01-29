@@ -57,6 +57,10 @@ conda activate newsapp
 pip install -r requirements.txt
 python main.py
 ```
+```
+docker compose build
+docker compose up
+```
 
 ### 2. API dokumentacija
 Svaki mikroservis koristi FastAPI te automatski generira Swagger dokumentaciju:

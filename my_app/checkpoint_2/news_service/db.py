@@ -1,4 +1,4 @@
-from .models import News
+from models import News
 
 NEWS_DB = [
     News(id=1, title="Jesenski rok", content="Studenti čekali X-ice...", category="students"),
